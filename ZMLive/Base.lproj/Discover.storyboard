@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="i3F-6m-MXo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--发现-->
+        <scene sceneID="zOm-xj-3Rr">
+            <objects>
+                <viewController id="eMo-Nf-Jiv" customClass="DiscoverViewController" customModule="XMGTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="afM-k7-RgO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dcr-PT-1Y1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qBC-0W-57a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="217" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r11-9B-fQL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DiscoverTableCellID" rowHeight="217" id="wYn-KZ-xTS" customClass="DiscoverTableViewCell" customModule="XMGTV" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="217"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wYn-KZ-xTS" id="3Ij-Tb-9Rv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MCk-MD-FkR">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="217"/>
+                                                    <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <collectionViewLayout key="collectionViewLayout" id="xU7-s5-fe3" customClass="DiscoverContentViewLayout" customModule="XMGTV" customModuleProvider="target"/>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DiscoverCollectionCellID" id="AeF-Aa-oaW" customClass="DiscoverCollectionViewCell" customModule="XMGTV" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="103" height="148"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="148"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3870人观看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFn-uf-g2h">
+                                                                        <rect key="frame" x="5" y="128" width="56" height="12"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="12" id="eKq-Yg-ya5"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月亮啊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MU-wh-oQn">
+                                                                        <rect key="frame" x="5" y="108" width="98" height="15"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="15" id="bvH-N7-44X"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kPq-6P-cVV">
+                                                                        <rect key="frame" x="0.0" y="10" width="103" height="93"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </imageView>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_live" translatesAutoresizingMaskIntoConstraints="NO" id="DHO-tt-QqA">
+                                                                        <rect key="frame" x="75" y="15" width="23" height="13"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="kPq-6P-cVV" secondAttribute="trailing" id="ABm-OF-AQJ"/>
+                                                                <constraint firstItem="6MU-wh-oQn" firstAttribute="leading" secondItem="AeF-Aa-oaW" secondAttribute="leading" constant="5" id="E7X-s9-ma7"/>
+                                                                <constraint firstAttribute="bottom" secondItem="jFn-uf-g2h" secondAttribute="bottom" constant="8" id="KQV-nH-oXE"/>
+                                                                <constraint firstItem="kPq-6P-cVV" firstAttribute="top" secondItem="AeF-Aa-oaW" secondAttribute="top" constant="10" id="Lcp-UT-CnS"/>
+                                                                <constraint firstItem="DHO-tt-QqA" firstAttribute="trailing" secondItem="kPq-6P-cVV" secondAttribute="trailing" constant="-5" id="Oem-Dd-a9U"/>
+                                                                <constraint firstItem="jFn-uf-g2h" firstAttribute="top" secondItem="6MU-wh-oQn" secondAttribute="bottom" constant="5" id="ScI-5h-rw4"/>
+                                                                <constraint firstItem="kPq-6P-cVV" firstAttribute="leading" secondItem="AeF-Aa-oaW" secondAttribute="leading" id="dux-nF-BYu"/>
+                                                                <constraint firstItem="DHO-tt-QqA" firstAttribute="top" secondItem="kPq-6P-cVV" secondAttribute="top" constant="5" id="hCH-TU-tgL"/>
+                                                                <constraint firstItem="6MU-wh-oQn" firstAttribute="top" secondItem="kPq-6P-cVV" secondAttribute="bottom" constant="5" id="jaq-wi-qnK"/>
+                                                                <constraint firstAttribute="trailing" secondItem="6MU-wh-oQn" secondAttribute="trailing" id="wgc-RX-VzD"/>
+                                                                <constraint firstItem="jFn-uf-g2h" firstAttribute="leading" secondItem="AeF-Aa-oaW" secondAttribute="leading" constant="5" id="yPc-lF-8dI"/>
+                                                            </constraints>
+                                                            <size key="customSize" width="103" height="148"/>
+                                                            <connections>
+                                                                <outlet property="iconImageView" destination="kPq-6P-cVV" id="vRZ-0p-76T"/>
+                                                                <outlet property="liveImageView" destination="DHO-tt-QqA" id="Tjc-UH-vuN"/>
+                                                                <outlet property="nickNameLabel" destination="6MU-wh-oQn" id="aMg-xW-bB5"/>
+                                                                <outlet property="onlineLabel" destination="jFn-uf-g2h" id="qtw-Cl-EX1"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="wYn-KZ-xTS" id="46W-kT-8ls"/>
+                                                        <outlet property="delegate" destination="wYn-KZ-xTS" id="nBg-nu-5bB"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="MCk-MD-FkR" secondAttribute="bottom" id="9Zy-r9-94F"/>
+                                                <constraint firstItem="MCk-MD-FkR" firstAttribute="top" secondItem="3Ij-Tb-9Rv" secondAttribute="top" id="JAg-Wq-V5z"/>
+                                                <constraint firstItem="MCk-MD-FkR" firstAttribute="leading" secondItem="3Ij-Tb-9Rv" secondAttribute="leading" id="bjk-YD-Qmv"/>
+                                                <constraint firstAttribute="trailing" secondItem="MCk-MD-FkR" secondAttribute="trailing" id="jnH-Vk-ASk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="MCk-MD-FkR" id="oMF-hb-h4l"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eMo-Nf-Jiv" id="KNw-le-bBN"/>
+                                    <outlet property="delegate" destination="eMo-Nf-Jiv" id="sHL-Hm-U4u"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r11-9B-fQL" firstAttribute="top" secondItem="qBC-0W-57a" secondAttribute="top" id="Dc0-pk-yu0"/>
+                            <constraint firstAttribute="bottom" secondItem="r11-9B-fQL" secondAttribute="bottom" id="HKl-2e-Piw"/>
+                            <constraint firstAttribute="trailing" secondItem="r11-9B-fQL" secondAttribute="trailing" id="YUd-5D-hGJ"/>
+                            <constraint firstItem="r11-9B-fQL" firstAttribute="leading" secondItem="qBC-0W-57a" secondAttribute="leading" id="jrV-Qr-zeW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="发现" id="vvZ-JC-K9I"/>
+                    <connections>
+                        <outlet property="tableView" destination="r11-9B-fQL" id="Bbm-pI-6NO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LWt-ip-idR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1335.2" y="-296.40179910044981"/>
+        </scene>
+        <!--发现-->
+        <scene sceneID="VFi-m0-axf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i3F-6m-MXo" customClass="XMGNavigationController" customModule="XMGTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="发现" image="found-n" selectedImage="found-p" id="swl-S9-4Vx"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RZB-2m-TAA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eMo-Nf-Jiv" kind="relationship" relationship="rootViewController" id="huZ-Qn-LQ6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejQ-Fq-MZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="396" y="-296.40179910044981"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="found-n" width="25" height="19"/>
+        <image name="found-p" width="25" height="19"/>
+        <image name="home_icon_live" width="23" height="13"/>
+    </resources>
+</document>

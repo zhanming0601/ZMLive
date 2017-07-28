@@ -1,0 +1,6 @@
+framework module Pods_ZMLive {
+  umbrella header "Pods-ZMLive-umbrella.h"
+
+  export *
+  module * { export * }
+}

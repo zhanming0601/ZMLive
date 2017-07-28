@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MoreInfoView" customModule="XMGTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rfy-cw-lqL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="fa3-7V-S38">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FUe-OT-0Vf">
+                                <rect key="frame" x="20" y="10" width="335" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzV-7r-mJ2" customClass="MoreInfoButton" customModule="XMGTV" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="炫彩飞屏" image="more_btn_flyscreen"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rff-w8-Mci" customClass="MoreInfoButton" customModule="XMGTV" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="83.5" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="广播" image="more_btn_radio"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNJ-33-2FF" customClass="MoreInfoButton" customModule="XMGTV" customModuleProvider="target">
+                                        <rect key="frame" x="167.5" y="0.0" width="84" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="发红包" image="more_btn_redbag"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uld-U0-mQl" customClass="MoreInfoButton" customModule="XMGTV" customModuleProvider="target">
+                                        <rect key="frame" x="251.5" y="0.0" width="83.5" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="举报" image="more_btn_report"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FUe-OT-0Vf" firstAttribute="top" secondItem="fa3-7V-S38" secondAttribute="top" constant="10" id="2l9-aC-t8L"/>
+                            <constraint firstAttribute="trailing" secondItem="FUe-OT-0Vf" secondAttribute="trailing" constant="20" id="ZuD-QM-xvf"/>
+                            <constraint firstItem="FUe-OT-0Vf" firstAttribute="leading" secondItem="fa3-7V-S38" secondAttribute="leading" constant="20" id="cmb-s3-QSD"/>
+                            <constraint firstAttribute="bottom" secondItem="FUe-OT-0Vf" secondAttribute="bottom" constant="10" id="l8h-Db-xcp"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="dark"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Rfy-cw-lqL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3CQ-LH-Y3V"/>
+                <constraint firstAttribute="bottom" secondItem="Rfy-cw-lqL" secondAttribute="bottom" id="3UD-Zd-fYL"/>
+                <constraint firstAttribute="trailing" secondItem="Rfy-cw-lqL" secondAttribute="trailing" id="Oph-Us-Ssh"/>
+                <constraint firstItem="Rfy-cw-lqL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="krZ-6E-oVf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="45.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="more_btn_flyscreen" width="25" height="25"/>
+        <image name="more_btn_radio" width="25" height="25"/>
+        <image name="more_btn_redbag" width="25" height="25"/>
+        <image name="more_btn_report" width="25" height="25"/>
+    </resources>
+</document>
