@@ -118,7 +118,6 @@
 		DCC60BD81F2B9126007B9D26 /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B631F2B9126007B9D26 /* KingfisherExtension.swift */; };
 		DCC60BD91F2B9126007B9D26 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B641F2B9126007B9D26 /* NetworkTools.swift */; };
 		DCC60BDA1F2B9126007B9D26 /* SqliteTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B651F2B9126007B9D26 /* SqliteTools.swift */; };
-		DCC60BDB1F2B9126007B9D26 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC60B671F2B9126007B9D26 /* IJKMediaFramework.framework */; };
 		DCC60BDC1F2B9126007B9D26 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCC60B681F2B9126007B9D26 /* Info.plist */; };
 		DCC60BDD1F2B9126007B9D26 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC60B691F2B9126007B9D26 /* Profile.storyboard */; };
 		DCC60BDE1F2B9126007B9D26 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCC60B6A1F2B9126007B9D26 /* Rank.storyboard */; };
@@ -265,7 +264,6 @@
 		DCC60B631F2B9126007B9D26 /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
 		DCC60B641F2B9126007B9D26 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		DCC60B651F2B9126007B9D26 /* SqliteTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SqliteTools.swift; sourceTree = "<group>"; };
-		DCC60B671F2B9126007B9D26 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		DCC60B681F2B9126007B9D26 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCC60B691F2B9126007B9D26 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		DCC60B6A1F2B9126007B9D26 /* Rank.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
@@ -285,7 +283,6 @@
 				DCC60BE51F2B9216007B9D26 /* libz.1.1.3.tbd in Frameworks */,
 				DCC60BE31F2B9169007B9D26 /* libsqlite3.tbd in Frameworks */,
 				43A60E036A87B2D6A390679D /* Pods_ZMLive.framework in Frameworks */,
-				DCC60BDB1F2B9126007B9D26 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,7 +351,6 @@
 				DCC60ACA1F2B9126007B9D26 /* Assets.xcassets */,
 				DCC60ACB1F2B9126007B9D26 /* Base.lproj */,
 				DCC60AD51F2B9126007B9D26 /* Classes */,
-				DCC60B661F2B9126007B9D26 /* IJKPlayer */,
 				DCC60B681F2B9126007B9D26 /* Info.plist */,
 				DCC60B691F2B9126007B9D26 /* Profile.storyboard */,
 				DCC60B6A1F2B9126007B9D26 /* Rank.storyboard */,
@@ -836,14 +832,6 @@
 				DCC60B651F2B9126007B9D26 /* SqliteTools.swift */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		DCC60B661F2B9126007B9D26 /* IJKPlayer */ = {
-			isa = PBXGroup;
-			children = (
-				DCC60B671F2B9126007B9D26 /* IJKMediaFramework.framework */,
-			);
-			path = IJKPlayer;
 			sourceTree = "<group>";
 		};
 		DCC60B6B1F2B9126007B9D26 /* Resource */ = {
