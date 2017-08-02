@@ -15,8 +15,8 @@
 1.**Clone the repo**
 
 ```
-$ git clone https://github.com/zhanming0601/react-native-sudaizhijia.git
-$ cd react-native-sudaizhijia
+$ git clone https://github.com/zhanming0601/ZMLive.git
+$ cd ZMLive
 ```
 2.**Install dependencies**
 
@@ -41,5 +41,5 @@ The MIT License
 
 ## 问题?
 
-可以给我发邮件到 18611205315@163.com or [issues](https://github.com/zhanming0601/react-native-sudaizhijia/issues) me
+可以给我发邮件到 18611205315@163.com or [issues](https://github.com/zhanming0601/ZMLive/issues) me
 
