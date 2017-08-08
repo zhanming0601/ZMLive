@@ -1,6 +1,6 @@
 //
-//  HYTitleView.swift
-//  HYContentPageView
+//  ZMTitleView.swift
+//  ZMContentPageView
 //
 //  Created by xiaomage on 2016/10/27.
 //  Copyright © 2016年 seemygo. All rights reserved.
@@ -9,18 +9,18 @@
 import UIKit
 
 // MARK:- 定义协议
-protocol HYTitleViewDelegate : class {
-    func titleView(_ titleView : HYTitleView, selectedIndex index : Int)
+protocol ZMTitleViewDelegate : class {
+    func titleView(_ titleView : ZMTitleView, selectedIndex index : Int)
 }
 
-class HYTitleView: UIView {
+class ZMTitleView: UIView {
     
     // MARK: 对外属性
-    weak var delegate : HYTitleViewDelegate?
+    weak var delegate : ZMTitleViewDelegate?
     
     // MARK: 定义属性
     fileprivate var titles : [String]!
-    fileprivate var style : HYTitleStyle!
+    fileprivate var style : ZMTitleStyle!
     fileprivate var currentIndex : Int = 0
     
     // MARK: 存储属性
@@ -59,7 +59,7 @@ class HYTitleView: UIView {
     fileprivate lazy var selectedColorRGB : (r : CGFloat, g : CGFloat, b : CGFloat) = self.getRGBWithColor(self.style.selectedColor)
     
     // MARK: 自定义构造函数
-    init(frame: CGRect, titles : [String], style : HYTitleStyle) {
+    init(frame: CGRect, titles : [String], style : ZMTitleStyle) {
         super.init(frame: frame)
         
         self.titles = titles
@@ -75,7 +75,7 @@ class HYTitleView: UIView {
 
 
 // MARK:- 设置UI界面内容
-extension HYTitleView {
+extension ZMTitleView {
     fileprivate func setupUI() {
         // 0.设置自己的背景
         backgroundColor = style.titleBgColor
@@ -190,7 +190,7 @@ extension HYTitleView {
 
 
 // MARK:- 事件处理
-extension HYTitleView {
+extension ZMTitleView {
     @objc fileprivate func titleLabelClick(_ tap : UITapGestureRecognizer) {
         // 0.获取当前Label
         guard let currentLabel = tap.view as? UILabel else { return }
@@ -242,7 +242,7 @@ extension HYTitleView {
 
 
 // MARK:- 获取RGB的值
-extension HYTitleView {
+extension ZMTitleView {
     fileprivate func getRGBWithColor(_ color : UIColor) -> (CGFloat, CGFloat, CGFloat) {
         guard let components = color.cgColor.components else {
             fatalError("请使用RGB方式给Title赋值颜色")
@@ -253,7 +253,7 @@ extension HYTitleView {
 }
 
 // MARK:- 对外暴露的方法
-extension HYTitleView {
+extension ZMTitleView {
     func setTitleWithProgress(_ progress : CGFloat, sourceIndex : Int, targetIndex : Int) {
         // 1.取出sourceLabel/targetLabel
         let sourceLabel = titleLabels[sourceIndex]

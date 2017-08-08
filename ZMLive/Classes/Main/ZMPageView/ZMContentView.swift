@@ -1,6 +1,6 @@
 //
-//  HYContentView.swift
-//  HYContentPageView
+//  ZMContentView.swift
+//  ZMContentPageView
 //
 //  Created by xiaomage on 2016/10/27.
 //  Copyright © 2016年 seemygo. All rights reserved.
@@ -8,18 +8,18 @@
 
 import UIKit
 
-@objc protocol HYContentViewDelegate : class {
-    func contentView(_ contentView : HYContentView, progress : CGFloat, sourceIndex : Int, targetIndex : Int)
+@objc protocol ZMContentViewDelegate : class {
+    func contentView(_ contentView : ZMContentView, progress : CGFloat, sourceIndex : Int, targetIndex : Int)
     
-    @objc optional func contentViewEndScroll(_ contentView : HYContentView)
+    @objc optional func contentViewEndScroll(_ contentView : ZMContentView)
 }
 
 private let kContentCellID = "kContentCellID"
 
-class HYContentView: UIView {
+class ZMContentView: UIView {
     
     // MARK: 对外属性
-    weak var delegate : HYContentViewDelegate?
+    weak var delegate : ZMContentViewDelegate?
     
     // MARK: 定义属性
     fileprivate var childVcs : [UIViewController]!
@@ -66,7 +66,7 @@ class HYContentView: UIView {
 
 
 // MARK:- 设置界面内容
-extension HYContentView {
+extension ZMContentView {
     fileprivate func setupUI() {
         // 1.将所有的控制器添加到父控制器中
         for vc in childVcs {
@@ -80,7 +80,7 @@ extension HYContentView {
 
 
 // MARK:- 设置UICollectionView的数据源
-extension HYContentView : UICollectionViewDataSource {
+extension ZMContentView : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childVcs.count
     }
@@ -104,7 +104,7 @@ extension HYContentView : UICollectionViewDataSource {
 
 
 // MARK:- 设置UICollectionView的代理
-extension HYContentView : UICollectionViewDelegate {
+extension ZMContentView : UICollectionViewDelegate {
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         
         isForbidScrollDelegate = false
@@ -173,7 +173,7 @@ extension HYContentView : UICollectionViewDelegate {
 }
 
 // MARK:- 对外暴露的方法
-extension HYContentView {
+extension ZMContentView {
     func setCurrentIndex(_ currentIndex : Int) {
         
         // 1.记录需要进制执行代理方法

@@ -3,7 +3,7 @@
 //  zhanming
 //
 //  Created by apple on 17/6/9.
-//  Copyright © 2017年 coderwhy. All rights reserved.
+//  Copyright © 2017年 coderzm. All rights reserved.
 //
 
 import UIKit
@@ -18,6 +18,26 @@ class AnchorViewController: UIViewController {
     
     // MARK: 定义属性
     fileprivate lazy var homeVM : HomeViewModel = HomeViewModel()
+    
+    
+    fileprivate lazy var reloadBtn : UIButton = {
+        
+        let btn = UIButton(type: UIButtonType.custom)
+        
+        btn.setTitleColor(UIColor.black, for: UIControlState.normal)
+        
+        btn.setTitle("重新加载", for: UIControlState.normal)
+        
+        btn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        
+        btn.sizeToFit()
+        
+        btn.center = self.view.center
+        
+        btn.addTarget(self, action: #selector(reloadClick), for: UIControlEvents.touchUpInside)
+        
+        return btn
+    }()
     fileprivate lazy var collectionView : UICollectionView = {
         let layout = WaterfallLayout()
         layout.sectionInset = UIEdgeInsets(top: kEdgeMargin, left: kEdgeMargin, bottom: kEdgeMargin, right: kEdgeMargin)
@@ -50,6 +70,16 @@ class AnchorViewController: UIViewController {
 extension AnchorViewController {
     fileprivate func setupUI() {
         view.addSubview(collectionView)
+        
+        if(homeType.type == 0){
+        
+            collectionView.addSubview(reloadBtn);
+        }
+        
+    }
+    @objc fileprivate func reloadClick() {
+        
+        loadData(index: 0)
     }
 }
 

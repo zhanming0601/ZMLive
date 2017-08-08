@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		43A60E036A87B2D6A390679D /* Pods_ZMLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542DEA759513A314E05C96EF /* Pods_ZMLive.framework */; };
+		DC5F4CB11F3A1D9500BA8A86 /* ZMContentFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F4CAB1F3A1D9500BA8A86 /* ZMContentFlowLayout.swift */; };
+		DC5F4CB21F3A1D9500BA8A86 /* ZMContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F4CAC1F3A1D9500BA8A86 /* ZMContentView.swift */; };
+		DC5F4CB31F3A1D9500BA8A86 /* ZMPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F4CAD1F3A1D9500BA8A86 /* ZMPageCollectionView.swift */; };
+		DC5F4CB41F3A1D9500BA8A86 /* ZMPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F4CAE1F3A1D9500BA8A86 /* ZMPageView.swift */; };
+		DC5F4CB51F3A1D9500BA8A86 /* ZMTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F4CAF1F3A1D9500BA8A86 /* ZMTitleStyle.swift */; };
+		DC5F4CB61F3A1D9500BA8A86 /* ZMTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5F4CB01F3A1D9500BA8A86 /* ZMTitleView.swift */; };
 		DCC6087E1F2B8A84007B9D26 /* ZMLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC6087D1F2B8A84007B9D26 /* ZMLiveTests.swift */; };
 		DCC608891F2B8A84007B9D26 /* ZMLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC608881F2B8A84007B9D26 /* ZMLiveUITests.swift */; };
 		DCC60B6F1F2B9126007B9D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60AC91F2B9126007B9D26 /* AppDelegate.swift */; };
@@ -77,12 +83,6 @@
 		DCC60BAF1F2B9126007B9D26 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B2E1F2B9126007B9D26 /* UIColor-Extension.swift */; };
 		DCC60BB01F2B9126007B9D26 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B2F1F2B9126007B9D26 /* UIImage-Extension.swift */; };
 		DCC60BB11F2B9126007B9D26 /* UITextField-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B301F2B9126007B9D26 /* UITextField-Extension.swift */; };
-		DCC60BB21F2B9126007B9D26 /* HYContentFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B321F2B9126007B9D26 /* HYContentFlowLayout.swift */; };
-		DCC60BB31F2B9126007B9D26 /* HYContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B331F2B9126007B9D26 /* HYContentView.swift */; };
-		DCC60BB41F2B9126007B9D26 /* HYPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B341F2B9126007B9D26 /* HYPageCollectionView.swift */; };
-		DCC60BB51F2B9126007B9D26 /* HYPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B351F2B9126007B9D26 /* HYPageView.swift */; };
-		DCC60BB61F2B9126007B9D26 /* HYTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B361F2B9126007B9D26 /* HYTitleStyle.swift */; };
-		DCC60BB71F2B9126007B9D26 /* HYTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B371F2B9126007B9D26 /* HYTitleView.swift */; };
 		DCC60BB81F2B9126007B9D26 /* ysocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B391F2B9126007B9D26 /* ysocket.swift */; };
 		DCC60BB91F2B9126007B9D26 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B3A1F2B9126007B9D26 /* ytcpsocket.c */; };
 		DCC60BBA1F2B9126007B9D26 /* ytcpsocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC60B3B1F2B9126007B9D26 /* ytcpsocket.swift */; };
@@ -148,6 +148,12 @@
 /* Begin PBXFileReference section */
 		23A4368A9A544A84F103B2C2 /* Pods-ZMLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMLive/Pods-ZMLive.debug.xcconfig"; sourceTree = "<group>"; };
 		542DEA759513A314E05C96EF /* Pods_ZMLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5F4CAB1F3A1D9500BA8A86 /* ZMContentFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMContentFlowLayout.swift; sourceTree = "<group>"; };
+		DC5F4CAC1F3A1D9500BA8A86 /* ZMContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMContentView.swift; sourceTree = "<group>"; };
+		DC5F4CAD1F3A1D9500BA8A86 /* ZMPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMPageCollectionView.swift; sourceTree = "<group>"; };
+		DC5F4CAE1F3A1D9500BA8A86 /* ZMPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMPageView.swift; sourceTree = "<group>"; };
+		DC5F4CAF1F3A1D9500BA8A86 /* ZMTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMTitleStyle.swift; sourceTree = "<group>"; };
+		DC5F4CB01F3A1D9500BA8A86 /* ZMTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZMTitleView.swift; sourceTree = "<group>"; };
 		DCC608651F2B8A84007B9D26 /* ZMLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC608791F2B8A84007B9D26 /* ZMLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCC6087D1F2B8A84007B9D26 /* ZMLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZMLiveTests.swift; sourceTree = "<group>"; };
@@ -223,12 +229,6 @@
 		DCC60B2E1F2B9126007B9D26 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		DCC60B2F1F2B9126007B9D26 /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 		DCC60B301F2B9126007B9D26 /* UITextField-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField-Extension.swift"; sourceTree = "<group>"; };
-		DCC60B321F2B9126007B9D26 /* HYContentFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContentFlowLayout.swift; sourceTree = "<group>"; };
-		DCC60B331F2B9126007B9D26 /* HYContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYContentView.swift; sourceTree = "<group>"; };
-		DCC60B341F2B9126007B9D26 /* HYPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageCollectionView.swift; sourceTree = "<group>"; };
-		DCC60B351F2B9126007B9D26 /* HYPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPageView.swift; sourceTree = "<group>"; };
-		DCC60B361F2B9126007B9D26 /* HYTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTitleStyle.swift; sourceTree = "<group>"; };
-		DCC60B371F2B9126007B9D26 /* HYTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYTitleView.swift; sourceTree = "<group>"; };
 		DCC60B391F2B9126007B9D26 /* ysocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ysocket.swift; sourceTree = "<group>"; };
 		DCC60B3A1F2B9126007B9D26 /* ytcpsocket.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ytcpsocket.c; sourceTree = "<group>"; };
 		DCC60B3B1F2B9126007B9D26 /* ytcpsocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ytcpsocket.swift; sourceTree = "<group>"; };
@@ -320,6 +320,19 @@
 				F34A5BCC16069E91964740C8 /* Pods-ZMLive.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC5F4CAA1F3A1D9500BA8A86 /* ZMPageView */ = {
+			isa = PBXGroup;
+			children = (
+				DC5F4CAB1F3A1D9500BA8A86 /* ZMContentFlowLayout.swift */,
+				DC5F4CAC1F3A1D9500BA8A86 /* ZMContentView.swift */,
+				DC5F4CAD1F3A1D9500BA8A86 /* ZMPageCollectionView.swift */,
+				DC5F4CAE1F3A1D9500BA8A86 /* ZMPageView.swift */,
+				DC5F4CAF1F3A1D9500BA8A86 /* ZMTitleStyle.swift */,
+				DC5F4CB01F3A1D9500BA8A86 /* ZMTitleView.swift */,
+			);
+			path = ZMPageView;
 			sourceTree = "<group>";
 		};
 		DCC6085C1F2B8A84007B9D26 = {
@@ -664,10 +677,10 @@
 		DCC60B251F2B9126007B9D26 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DC5F4CAA1F3A1D9500BA8A86 /* ZMPageView */,
 				DCC60B261F2B9126007B9D26 /* Common */,
 				DCC60B281F2B9126007B9D26 /* Controller */,
 				DCC60B2B1F2B9126007B9D26 /* Extension */,
-				DCC60B311F2B9126007B9D26 /* HYPageView */,
 				DCC60B381F2B9126007B9D26 /* ysocket */,
 			);
 			path = Main;
@@ -700,19 +713,6 @@
 				DCC60B301F2B9126007B9D26 /* UITextField-Extension.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		DCC60B311F2B9126007B9D26 /* HYPageView */ = {
-			isa = PBXGroup;
-			children = (
-				DCC60B321F2B9126007B9D26 /* HYContentFlowLayout.swift */,
-				DCC60B331F2B9126007B9D26 /* HYContentView.swift */,
-				DCC60B341F2B9126007B9D26 /* HYPageCollectionView.swift */,
-				DCC60B351F2B9126007B9D26 /* HYPageView.swift */,
-				DCC60B361F2B9126007B9D26 /* HYTitleStyle.swift */,
-				DCC60B371F2B9126007B9D26 /* HYTitleView.swift */,
-			);
-			path = HYPageView;
 			sourceTree = "<group>";
 		};
 		DCC60B381F2B9126007B9D26 /* ysocket */ = {
@@ -1056,6 +1056,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCC60B761F2B9126007B9D26 /* DiscoverViewController.swift in Sources */,
+				DC5F4CB31F3A1D9500BA8A86 /* ZMPageCollectionView.swift in Sources */,
 				DCC60B771F2B9126007B9D26 /* CarouselModel.swift in Sources */,
 				DCC60BD71F2B9126007B9D26 /* HYSocket.swift in Sources */,
 				DCC60BCB1F2B9126007B9D26 /* WeekrankViewController.swift in Sources */,
@@ -1069,7 +1070,6 @@
 				DCC60B991F2B9126007B9D26 /* GiftListView.swift in Sources */,
 				DCC60BD31F2B9126007B9D26 /* WeeklyRankViewCell.swift in Sources */,
 				DCC60B8A1F2B9126007B9D26 /* RoomViewController.swift in Sources */,
-				DCC60BB21F2B9126007B9D26 /* HYContentFlowLayout.swift in Sources */,
 				DCC60B841F2B9126007B9D26 /* HomeViewModel.swift in Sources */,
 				DCC60BA31F2B9126007B9D26 /* MoreInfoView.swift in Sources */,
 				DCC60BD51F2B9126007B9D26 /* AnimManager.swift in Sources */,
@@ -1078,24 +1078,28 @@
 				DCC60BAD1F2B9126007B9D26 /* NSDate-Extension.swift in Sources */,
 				DCC60BC11F2B9126007B9D26 /* SettingsSectionModel.swift in Sources */,
 				DCC60B7D1F2B9126007B9D26 /* DiscoverTableViewCell.swift in Sources */,
+				DC5F4CB11F3A1D9500BA8A86 /* ZMContentFlowLayout.swift in Sources */,
 				DCC60BBB1F2B9126007B9D26 /* yudpsocket.c in Sources */,
 				DCC60BB91F2B9126007B9D26 /* ytcpsocket.c in Sources */,
 				DCC60BAB1F2B9126007B9D26 /* MainViewController.swift in Sources */,
 				DCC60BB01F2B9126007B9D26 /* UIImage-Extension.swift in Sources */,
+				DC5F4CB51F3A1D9500BA8A86 /* ZMTitleStyle.swift in Sources */,
 				DCC60BAC1F2B9126007B9D26 /* XMGNavigationController.swift in Sources */,
 				DCC60BC61F2B9126007B9D26 /* DetailRankViewController.swift in Sources */,
 				DCC60B941F2B9126007B9D26 /* ChatToolsView.swift in Sources */,
 				DCC60BCF1F2B9126007B9D26 /* DetailRankViewModel.swift in Sources */,
+				DC5F4CB21F3A1D9500BA8A86 /* ZMContentView.swift in Sources */,
 				DCC60B8E1F2B9126007B9D26 /* GiftModel.swift in Sources */,
 				DCC60B821F2B9126007B9D26 /* HomeType.swift in Sources */,
 				DCC60BCC1F2B9126007B9D26 /* RankModel.swift in Sources */,
 				DCC60B881F2B9126007B9D26 /* HomeViewCell.swift in Sources */,
 				DCC60BA11F2B9126007B9D26 /* HYGiftModel.swift in Sources */,
-				DCC60BB51F2B9126007B9D26 /* HYPageView.swift in Sources */,
 				DCC60BC81F2B9126007B9D26 /* RankViewController.swift in Sources */,
 				DCC60B7E1F2B9126007B9D26 /* AnchorViewController.swift in Sources */,
 				DCC60BCD1F2B9126007B9D26 /* RankType.swift in Sources */,
+				DC5F4CB61F3A1D9500BA8A86 /* ZMTitleView.swift in Sources */,
 				DCC60B851F2B9126007B9D26 /* WaterfallLayout.swift in Sources */,
+				DC5F4CB41F3A1D9500BA8A86 /* ZMPageView.swift in Sources */,
 				DCC60B7C1F2B9126007B9D26 /* DiscoverCollectionViewCell.swift in Sources */,
 				DCC60BD01F2B9126007B9D26 /* WeeklyRankViewModel.swift in Sources */,
 				DCC60BD11F2B9126007B9D26 /* DetailRankViewCell.swift in Sources */,
@@ -1116,17 +1120,14 @@
 				DCC60B921F2B9126007B9D26 /* ChatViewCell.swift in Sources */,
 				DCC60BAE1F2B9126007B9D26 /* String-Extension.swift in Sources */,
 				DCC60BBA1F2B9126007B9D26 /* ytcpsocket.swift in Sources */,
-				DCC60BB71F2B9126007B9D26 /* HYTitleView.swift in Sources */,
 				DCC60BBF1F2B9126007B9D26 /* SettingsViewController.swift in Sources */,
 				DCC60BDA1F2B9126007B9D26 /* SqliteTools.swift in Sources */,
 				DCC60B6F1F2B9126007B9D26 /* AppDelegate.swift in Sources */,
 				DCC60BD61F2B9126007B9D26 /* AttributedStrGenerator.swift in Sources */,
 				DCC60B811F2B9126007B9D26 /* AnchorModel.swift in Sources */,
-				DCC60BB31F2B9126007B9D26 /* HYContentView.swift in Sources */,
 				DCC60B791F2B9126007B9D26 /* DiscoverContentViewModel.swift in Sources */,
 				DCC60B9B1F2B9126007B9D26 /* GiftViewCell.swift in Sources */,
 				DCC60BA51F2B9126007B9D26 /* SocialShareView.swift in Sources */,
-				DCC60BB41F2B9126007B9D26 /* HYPageCollectionView.swift in Sources */,
 				DCC60B9E1F2B9126007B9D26 /* HYGiftChannelView.swift in Sources */,
 				DCC60B8D1F2B9126007B9D26 /* EmoticonPackage.swift in Sources */,
 				DCC60B961F2B9126007B9D26 /* EmoticonView.swift in Sources */,
@@ -1136,7 +1137,6 @@
 				DCC60B801F2B9126007B9D26 /* HomeViewController.swift in Sources */,
 				DCC60BB81F2B9126007B9D26 /* ysocket.swift in Sources */,
 				DCC60BCE1F2B9126007B9D26 /* WeeklyModel.swift in Sources */,
-				DCC60BB61F2B9126007B9D26 /* HYTitleStyle.swift in Sources */,
 				DCC60BA21F2B9126007B9D26 /* MoreInfoButton.swift in Sources */,
 				DCC60BA71F2B9126007B9D26 /* EmoticonViewModel.swift in Sources */,
 				DCC60B9D1F2B9126007B9D26 /* HYDigitLabel.swift in Sources */,
@@ -1313,6 +1313,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZMLive/IJKPlayer",
+					"$(PROJECT_DIR)/ZMLive",
 				);
 				INFOPLIST_FILE = ZMLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1333,6 +1334,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZMLive/IJKPlayer",
+					"$(PROJECT_DIR)/ZMLive",
 				);
 				INFOPLIST_FILE = ZMLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

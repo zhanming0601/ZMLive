@@ -3,7 +3,7 @@
 //  zhanming
 //
 //  Created by apple on 17/6/8.
-//  Copyright © 2017年 coderwhy. All rights reserved.
+//  Copyright © 2017年 coderzm. All rights reserved.
 //
 
 import UIKit
@@ -49,7 +49,7 @@ extension HomeViewController {
         let homeTypes = loadTypesData()
         
         // 2.创建主题内容
-        let style = HYTitleStyle()
+        let style = ZMTitleStyle()
         let pageFrame = CGRect(x: 0, y: kNavigationBarH + kStatusBarH, width: kScreenW, height: kScreenH - kNavigationBarH - kStatusBarH - 44)
         let titles = homeTypes.map({ $0.title })
         var childVcs = [AnchorViewController]()
@@ -58,7 +58,7 @@ extension HomeViewController {
             anchorVc.homeType = type
             childVcs.append(anchorVc)
         }
-        let pageView = HYPageView(frame: pageFrame, titles: titles, style: style, childVcs: childVcs, parentVc: self)
+        let pageView = ZMPageView(frame: pageFrame, titles: titles, style: style, childVcs: childVcs, parentVc: self)
         view.addSubview(pageView)
     }
     

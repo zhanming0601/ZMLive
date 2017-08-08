@@ -1,6 +1,6 @@
 //
-//  HYCustomStyle.swift
-//  HYContentPageView
+//  ZMCustomStyle.swift
+//  ZMContentPageView
 //
 //  Created by xiaomage on 2016/10/27.
 //  Copyright © 2016年 seemygo. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HYTitleStyle {
+class ZMTitleStyle {
     /// 是否是滚动的Title
     var isScrollEnable : Bool = true
     /// 普通Title颜色

@@ -1,14 +1,14 @@
 //
-//  HYContentFlowLayout.swift
-//  HYPageCollectionView
+//  ZMContentFlowLayout.swift
+//  ZMPageCollectionView
 //
 //  Created by apple on 17/6/11.
-//  Copyright © 2017年 coderwhy. All rights reserved.
+//  Copyright © 2017年 coderwZM. All rights reserved.
 //
 
 import UIKit
 
-class HYContentFlowLayout: UICollectionViewFlowLayout {
+class ZMContentFlowLayout: UICollectionViewFlowLayout {
     
     var cols : Int = 4
     var rows : Int = 2

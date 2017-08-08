@@ -3,7 +3,7 @@
 //  zhanming
 //
 //  Created by apple on 17/6/29.
-//  Copyright © 2017年 coderwhy. All rights reserved.
+//  Copyright © 2017年 coderzm. All rights reserved.
 //
 
 import UIKit
@@ -41,7 +41,7 @@ extension SubrankViewController {
     func setupSubrankUI(_ titles : [String]) {
         let pageRect = CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH - 64 - 44)
         let titles = titles
-        let style = HYTitleStyle()
+        let style = ZMTitleStyle()
         style.normalColor = UIColor(r: 0, g: 0, b: 0)
         style.isScrollEnable = false
         style.titleHeight = 35
@@ -54,7 +54,7 @@ extension SubrankViewController {
             childVcs.append(vc)
         }
         
-        let pageView = HYPageView(frame: pageRect, titles: titles, style: style, childVcs: childVcs, parentVc: self)
+        let pageView = ZMPageView(frame: pageRect, titles: titles, style: style, childVcs: childVcs, parentVc: self)
         
         view.addSubview(pageView)
     }

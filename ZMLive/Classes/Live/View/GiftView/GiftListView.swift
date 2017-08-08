@@ -3,7 +3,7 @@
 //  zhanming
 //
 //  Created by apple on 17/6/13.
-//  Copyright © 2017年 coderwhy. All rights reserved.
+//  Copyright © 2017年 coderzm. All rights reserved.
 //
 
 import UIKit
@@ -19,7 +19,7 @@ class GiftListView: UIView {
     @IBOutlet weak var giftView: UIView!
     @IBOutlet weak var sendGiftBtn: UIButton!
     
-    fileprivate var pageCollectionView : HYPageCollectionView!
+    fileprivate var pageCollectionView : ZMPageCollectionView!
     fileprivate var currentIndexPath : IndexPath?
     
     weak var delegate : GiftListViewDelegate?
@@ -41,12 +41,12 @@ extension GiftListView {
     }
     
     fileprivate func setupGiftView() {
-        let style = HYTitleStyle()
+        let style = ZMTitleStyle()
         style.isScrollEnable = false
         style.isShowBottomLine = true
         style.normalColor = UIColor(r: 255, g: 255, b: 255)
         
-        let layout = HYContentFlowLayout()
+        let layout = ZMContentFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         layout.minimumLineSpacing = 5
         layout.minimumInteritemSpacing = 5
@@ -55,7 +55,7 @@ extension GiftListView {
         
         var pageViewFrame = giftView.bounds
         pageViewFrame.size.width = kScreenW
-        pageCollectionView = HYPageCollectionView(frame: pageViewFrame, titles: ["热门", "高级", "豪华", "专属"], style: style, isTitleInTop: true, layout : layout)
+        pageCollectionView = ZMPageCollectionView(frame: pageViewFrame, titles: ["热门", "高级", "豪华", "专属"], style: style, isTitleInTop: true, layout : layout)
         giftView.addSubview(pageCollectionView)
         
         pageCollectionView.dataSource = self
@@ -85,7 +85,7 @@ extension GiftListView {
 
 
 // MARK:- 数据设置
-extension GiftListView : HYPageCollectionViewDataSource, HYPageCollectionViewDelegate {
+extension GiftListView : ZMPageCollectionViewDataSource, ZMPageCollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return GiftViewModel.shareInstance.giftlistData.count
     }

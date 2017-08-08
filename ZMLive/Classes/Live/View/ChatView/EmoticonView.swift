@@ -3,7 +3,7 @@
 //  zhanming
 //
 //  Created by apple on 17/6/14.
-//  Copyright © 2017年 coderwhy. All rights reserved.
+//  Copyright © 2017年 coderzm. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ private let kEmoticonCellID = "kEmoticonCellID"
 
 class EmoticonView: UIView {
     
-    fileprivate var pageCollectionView : HYPageCollectionView!
+    fileprivate var pageCollectionView : ZMPageCollectionView!
     
     fileprivate var emoticonClickCallback : (_ emoticon : Emoticon) -> ()
     
@@ -36,19 +36,19 @@ extension EmoticonView {
         
         let titles = ["普通", "粉丝专属"]
         
-        let style = HYTitleStyle()
+        let style = ZMTitleStyle()
         style.normalColor = UIColor(r: 255, g: 255, b: 255)
         style.isScrollEnable = false
         style.isShowBottomLine = true
         
-        let layout = HYContentFlowLayout()
+        let layout = ZMContentFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         layout.cols = 7
         layout.rows = 3
         layout.minimumLineSpacing = 5
         layout.minimumInteritemSpacing = 5
         
-        pageCollectionView = HYPageCollectionView(frame: bounds, titles: titles, style: style, isTitleInTop: false, layout: layout)
+        pageCollectionView = ZMPageCollectionView(frame: bounds, titles: titles, style: style, isTitleInTop: false, layout: layout)
         addSubview(pageCollectionView)
         
         pageCollectionView.dataSource = self
@@ -58,7 +58,7 @@ extension EmoticonView {
 }
 
 
-extension EmoticonView : HYPageCollectionViewDataSource, HYPageCollectionViewDelegate {
+extension EmoticonView : ZMPageCollectionViewDataSource, ZMPageCollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return EmoticonViewModel.shareInstance.packages.count
     }

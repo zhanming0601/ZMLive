@@ -1,43 +1,43 @@
 //
-//  HYPageCollectionView.swift
-//  HYPageCollectionView
+//  ZMPageCollectionView.swift
+//  ZMPageCollectionView
 //
 //  Created by apple on 17/6/11.
-//  Copyright © 2017年 coderwhy. All rights reserved.
+//  Copyright © 2017年 coderwZM. All rights reserved.
 //
 
 import UIKit
 
 
-protocol HYPageCollectionViewDataSource : class {
+protocol ZMPageCollectionViewDataSource : class {
     func numberOfSections(in collectionView : UICollectionView) -> Int
     func pageCollectionView(_ collectionView : UICollectionView, numsOfItemsInSection section : Int) -> Int
     func pageCollectionView(_ collectionView : UICollectionView, cellForItemAt indexPath : IndexPath) -> UICollectionViewCell
 }
 
-@objc protocol HYPageCollectionViewDelegate : class {
+@objc protocol ZMPageCollectionViewDelegate : class {
     @objc optional func pageCollectionView(_ collectionView : UICollectionView, didSelected atIndexPath : IndexPath)
 }
 
-class HYPageCollectionView: UIView {
+class ZMPageCollectionView: UIView {
     
     // MARK: 对外属性
-    weak var dataSource : HYPageCollectionViewDataSource?
-    weak var delegate : HYPageCollectionViewDelegate?
+    weak var dataSource : ZMPageCollectionViewDataSource?
+    weak var delegate : ZMPageCollectionViewDelegate?
     
     // MARK: 内部属性
     fileprivate var titles : [String]
-    fileprivate var style : HYTitleStyle
+    fileprivate var style : ZMTitleStyle
     fileprivate var isTitleInTop : Bool = false
-    fileprivate var layout : HYContentFlowLayout
+    fileprivate var layout : ZMContentFlowLayout
     
-    fileprivate var titleView : HYTitleView!
+    fileprivate var titleView : ZMTitleView!
     fileprivate var collectionView : UICollectionView!
     fileprivate var pageControl : UIPageControl!
     
     fileprivate var sourceIndexPath : IndexPath = IndexPath(item: 0, section: 0)
     
-    init(frame: CGRect, titles : [String], style : HYTitleStyle, isTitleInTop : Bool, layout : HYContentFlowLayout) {
+    init(frame: CGRect, titles : [String], style : ZMTitleStyle, isTitleInTop : Bool, layout : ZMContentFlowLayout) {
         
         self.titles = titles
         self.style = style
@@ -55,12 +55,12 @@ class HYPageCollectionView: UIView {
 }
 
 
-extension HYPageCollectionView {
+extension ZMPageCollectionView {
     fileprivate func setupUI() {
         let titleH : CGFloat = 44
         var titleFrame = CGRect(x: 0, y: 0, width: frame.width, height: titleH)
         titleFrame.origin.y = isTitleInTop ? 0 : frame.height - titleH
-        titleView = HYTitleView(frame: titleFrame, titles: titles, style: style)
+        titleView = ZMTitleView(frame: titleFrame, titles: titles, style: style)
         addSubview(titleView)
         titleView.delegate = self
         
@@ -85,7 +85,7 @@ extension HYPageCollectionView {
     
 }
 
-extension HYPageCollectionView {
+extension ZMPageCollectionView {
     func register(cellClass : AnyClass?, forCellID : String) {
         collectionView.register(cellClass, forCellWithReuseIdentifier: forCellID)
     }
@@ -99,7 +99,7 @@ extension HYPageCollectionView {
     }
 }
 
-extension HYPageCollectionView : UICollectionViewDataSource, UICollectionViewDelegate {
+extension ZMPageCollectionView : UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return dataSource?.numberOfSections(in: collectionView) ?? 0
     }
@@ -158,8 +158,8 @@ extension HYPageCollectionView : UICollectionViewDataSource, UICollectionViewDel
 }
 
 
-extension HYPageCollectionView : HYTitleViewDelegate {
-    func titleView(_ titleView: HYTitleView, selectedIndex index: Int) {
+extension ZMPageCollectionView : ZMTitleViewDelegate {
+    func titleView(_ titleView: ZMTitleView, selectedIndex index: Int) {
         let indexPath = IndexPath(item: 0, section: index)
         
         collectionView.scrollToItem(at: indexPath, at: .left, animated: true)

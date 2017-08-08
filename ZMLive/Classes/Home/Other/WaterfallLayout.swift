@@ -3,7 +3,7 @@
 //  02-UICollectionView布局
 //
 //  Created by apple on 16/10/29.
-//  Copyright © 2016年 xiaomage. All rights reserved.
+//  Copyright © 2016年 apple. All rights reserved.
 //
 
 import UIKit
